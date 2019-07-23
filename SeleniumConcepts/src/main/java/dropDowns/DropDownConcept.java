@@ -59,6 +59,7 @@ public class DropDownConcept {
 		//Thread.sleep(5000);
 		
 		
+		// Switching to frame 
 		
 		driver.switchTo().frame(0);
 		
@@ -68,19 +69,28 @@ public class DropDownConcept {
 		
 		WebElement dropDown = driver.findElement(By.xpath("//html[@xmlns='http://www.w3.org/1999/xhtml']/body/select"));
 		
-	//	dropDown.click();
-		
 		Select oselect = new Select(dropDown);
 		
 		oselect.selectByVisibleText("India");
 		
+		
+		
+		// Switching out of the frame OR switching to the default frame
+		
 		driver.switchTo().defaultContent();
+		
+		
+		
+		// Mouse hover on webElement using Actions class
 		
 		Actions action = new Actions(driver);
 		
 		WebElement FramesButton = driver.findElement(By.xpath("//a[text()='Frames and Windows']"));
 		
 		action.moveToElement(FramesButton).build().perform();
+		
+		
+		
 		
 		driver.close();
 		
