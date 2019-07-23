@@ -1,3 +1,4 @@
+package waits;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -20,6 +21,8 @@ public class WaitsConcepts {
 		// Implicit wait concept
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		
 		
 		
 		

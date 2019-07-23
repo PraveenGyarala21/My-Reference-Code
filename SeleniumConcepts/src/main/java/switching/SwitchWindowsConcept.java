@@ -1,3 +1,4 @@
+package switching;
 import java.util.Set;
 
 import org.openqa.selenium.By;
